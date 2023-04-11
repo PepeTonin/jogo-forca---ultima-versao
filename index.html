@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T.OOO.NIN</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Roboto:wght@400;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>T.OOO.NIN</h1>
+    </header>
+    <main>
+        <div class="container-centro">
+            <div class="container-palavra">
+                <div id="letra1-palavra" class="box-letra negativo"></div>
+                <div id="letra2-palavra" class="box-letra negativo"></div>
+                <div id="letra3-palavra" class="box-letra negativo"></div>
+                <div id="letra4-palavra" class="box-letra negativo"></div>
+                <div id="letra5-palavra" class="box-letra negativo"></div>
+                <div id="letra6-palavra" class="box-letra negativo"></div>
+            </div>
+            <div class="container-infos-erros">
+                <p id="outVidas">
+
+                </p>
+                <p class="letras-tentadas">
+                    Letras já tentadas: <span id="outLetrasTentadas"></span>
+                </p>
+            </div>
+            <form class="container-form">
+                <input type="text" placeholder="Tente uma letra" id="userInput">
+                <input type="submit" value="Tentar" id="btnTentarLetra">
+            </form>
+            <div class="container-mensagem-final">
+                <p id="textOutputLimiteErros">
+
+                </p>
+                <p id="palavraOutput">
+
+                </p>
+                <p id="textOutputAcerto">
+
+                </p>
+                <input type="button" value="Jogar novamente" class="oculto" id="btnJogarNovamente">
+            </div>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,155 @@
+/* CLASSES DINAMICAS */
+
+.oculto {
+    display: none;
+}
+
+.visivel {
+    display: inline;
+}
+
+.acerto {
+    background-color: #283618;
+    color: #fefae0;
+}
+
+.negativo {
+    background-color: #dda15e;
+}
+
+/* ################################### */
+
+/* CONTAINERS */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fefae0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-centro {
+    position: absolute;
+    top: 30%;
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-palavra {
+    font-weight: 900;
+    font-size: 36px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin: 5px 0 5px 0;
+}
+
+.container-infos-erros {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-weight: bold;
+}
+
+.container-form {
+    margin: 5px 0 5px 0;
+}
+
+.container-mensagem-final {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 0 5px 0;
+}
+
+/* ################################### */
+
+/* ADICIONAIS */
+
+h1 {
+    font-family: 'Bungee Spice', cursive;
+    margin: 0;
+    font-size: 48px;
+}
+
+.box-letra {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+p {
+    margin: 0;
+}
+
+.letras-tentadas {
+    font-size: 18px;
+}
+
+input {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 5px 10px;
+    outline: 0;
+    border: 1px solid rgba(0, 0, 0, 0.50);
+}
+
+input::placeholder {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+input[type=text] {
+    border-radius: 5px;
+}
+
+input[type=submit],
+input[type=button] {
+    background-color: #bc6c25;
+    letter-spacing: 1px;
+    border-radius: 5px;
+}
+
+input[type=submit]:hover,
+input[type=button]:hover {
+    background-color: #b88254;
+    cursor: pointer;
+}
+
+#textOutputLimiteErros,
+#palavraOutput {
+    color: #e63946;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#palavraOutput {
+    font-size: 28px;
+}
+
+#textOutputAcerto {
+    color: #283618;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+img {
+    width: 26px;
+}
