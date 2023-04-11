@@ -165,6 +165,7 @@ palavras.forEach((elemento) => {
 });
 
 let palavraSorteada = baseDeDados[Math.floor(Math.random() * baseDeDados.length)];
+console.log(palavraSorteada);
 
 // #################################################################################
 
@@ -294,60 +295,64 @@ frm.addEventListener("submit", (e) => {
 });
 
 btnJogarNovamente.addEventListener("click", () => {
-    // limpa o array da palavra auxiliar
-    palavraAuxiliar.length = 0;
-    palavraAuxiliar = []
-    // resorteia uma palavra
-    palavraSorteada = baseDeDados[Math.floor(Math.random() * baseDeDados.length)];
-    // adiciona os espaços em branco na palavra auxiliar
-    for (let i = 0; i < palavraSorteada.length; i++) {
-        palavraAuxiliar.push(" ");
-    }
-    mostraLetrasDaPalavra(palavraAuxiliar);
+    location.reload();
+})
 
-    // limpa array de letras tentadas
-    letrasTentadas.length = 0;
-    letrasTentadas = [];
-    letrasTentadasFormatadoHTML.length = 0;
-    letrasTentadasFormatadoHTML = [];
-    mostraLetrasTentadas(letrasTentadasFormatadoHTML);
+// btnJogarNovamente.addEventListener("click", () => {
+//     // limpa o array da palavra auxiliar
+//     palavraAuxiliar.length = 0;
+//     palavraAuxiliar = []
+//     // resorteia uma palavra
+//     palavraSorteada = baseDeDados[Math.floor(Math.random() * baseDeDados.length)];
+//     // adiciona os espaços em branco na palavra auxiliar
+//     for (let i = 0; i < palavraSorteada.length; i++) {
+//         palavraAuxiliar.push(" ");
+//     }
+//     mostraLetrasDaPalavra(palavraAuxiliar);
 
-    // limpa os campo de saida de texto
-    textOutputDerrota.innerText = "";
-    palavraOutput.innerText = "";
-    textOutputVitoria.innerText = "";
+//     // limpa array de letras tentadas
+//     letrasTentadas.length = 0;
+//     letrasTentadas = [];
+//     letrasTentadasFormatadoHTML.length = 0;
+//     letrasTentadasFormatadoHTML = [];
+//     mostraLetrasTentadas(letrasTentadasFormatadoHTML);
 
-    // reseta as vidas para 6
-    erros = 0;
-    mostraVidas();
+//     // limpa os campo de saida de texto
+//     textOutputDerrota.innerText = "";
+//     palavraOutput.innerText = "";
+//     textOutputVitoria.innerText = "";
 
-    // volta os box das letras para a classe inicial (negativo)
-    letra1.classList.add("negativo");
-    letra1.classList.remove("acerto");
+//     // reseta as vidas para 6
+//     erros = 0;
+//     mostraVidas();
 
-    letra2.classList.add("negativo");
-    letra2.classList.remove("acerto");
+//     // volta os box das letras para a classe inicial (negativo)
+//     letra1.classList.add("negativo");
+//     letra1.classList.remove("acerto");
 
-    letra3.classList.add("negativo");
-    letra3.classList.remove("acerto");
+//     letra2.classList.add("negativo");
+//     letra2.classList.remove("acerto");
 
-    letra4.classList.add("negativo");
-    letra4.classList.remove("acerto");
+//     letra3.classList.add("negativo");
+//     letra3.classList.remove("acerto");
 
-    letra5.classList.add("negativo");
-    letra5.classList.remove("acerto");
+//     letra4.classList.add("negativo");
+//     letra4.classList.remove("acerto");
 
-    letra6.classList.add("negativo");
-    letra6.classList.remove("acerto");
+//     letra5.classList.add("negativo");
+//     letra5.classList.remove("acerto");
 
-    // reativa o input de texto e o botão para tentar a letra
-    frm.btnTentarLetra.disabled = false;
-    frm.userInput.disabled = false;
+//     letra6.classList.add("negativo");
+//     letra6.classList.remove("acerto");
 
-    // oculta o botão jogar novamente
-    btnJogarNovamente.className = "oculto"
+//     // reativa o input de texto e o botão para tentar a letra
+//     frm.btnTentarLetra.disabled = false;
+//     frm.userInput.disabled = false;
 
-    // limpa o input de texto e o focaliza para facilitar a escrita
-    frm.userInput.value = "";
-    frm.userInput.focus();
-});
+//     // oculta o botão jogar novamente
+//     btnJogarNovamente.className = "oculto"
+
+//     // limpa o input de texto e o focaliza para facilitar a escrita
+//     frm.userInput.value = "";
+//     frm.userInput.focus();
+// });
